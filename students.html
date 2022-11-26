@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/login-popup.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header-logo" src="img/header-logo.svg" alt="" />
+      <ul class="header-menu">
+        <li>
+          <a class="header-menu_link" href="index.html">Главная</a>
+        </li>
+        <li>
+          <a class="header-menu_link header-menu_active-link" href="#">Студенты</a>
+        </li>
+        <li><a class="header-menu_link" href="about.html">О курсе</a></li>
+        <li><a class="header-menu_link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <a class="login-button" href="#">Войти</a>
+      <div class="login-popup">
+        <h2 class="popup-header">Войти на сайт</h2>
+        <form class="popup-form" action="" method="get">
+          <input
+            class="popup-form-login-input"
+            name="login"
+            type="text"
+            placeholder="Логин"
+            required=""
+          />
+          <input
+            class="popup-form-password-input"
+            name="password"
+            type="password"
+            placeholder="Пароль"
+            required=""
+          />
+          <button class="popup-form-button" type="submit">Войти</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="main-header">Студенты потока 08.02.2020 👧👦</h1>
+      <div class="main-students">
+        <section class="main-students-card">
+          <img
+            class="main-students-card-img"
+            src="img/avatar-man.svg"
+            alt="Avatar"
+            width="200"
+            height="270"
+          />
+          <p class="main-students-card-name">Василий Иванов</p>
+        </section>
+        <section class="main-students-card">
+          <img
+            class="main-students-card-img"
+            src="img/avatar-women.svg"
+            alt="Avatar"
+            width="200"
+            height="270"
+          />
+          <p class="main-students-card-name">
+            Мария <br />
+            Александрова
+          </p>
+          <!-- <span>Новичок</span> -->
+        </section>
+        <section class="main-students-card">
+          <img
+            class="main-students-card-img"
+            src="img/avatar-women.svg"
+            alt="Avatar"
+            width="200"
+            height="270"
+          />
+          <p class="main-students-card-name">
+            Мария <br />
+            Александрова
+          </p>
+        </section>
+        <section class="main-students-card">
+          <img
+            class="main-students-card-img"
+            src="img/avatar-man.svg"
+            alt="Avatar"
+            width="200"
+            height="270"
+          />
+          <p class="main-students-card-name">Василий Иванов</p>
+        </section>
+        <section class="main-students-card">
+          <img
+            class="main-students-card-img"
+            src="img/avatar-man.svg"
+            alt="Avatar"
+            width="200"
+            height="270"
+          />
+          <p class="main-students-card-name">Василий Иванов</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-сopyright">
+        2022 &#169;
+        <a class="footer-сopyright-link" href="https://innopolis.university/">учебный центр</a>
+      </p>
+    </footer>
+  </body>
+</html>

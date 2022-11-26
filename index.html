@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/login-popup.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header-logo" src="img/header-logo.svg" alt="" />
+      <ul class="header-menu">
+        <li>
+          <a class="header-menu_link header-menu_active-link" href="#">Главная</a>
+        </li>
+        <li><a class="header-menu_link" href="students.html">Студенты</a></li>
+        <li><a class="header-menu_link" href="about.html">О курсе</a></li>
+        <li><a class="header-menu_link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <a class="login-button" href="#">Войти</a>
+      <div class="login-popup">
+        <h2 class="popup-header">Войти на сайт</h2>
+        <form class="popup-form" action="" method="get">
+          <input
+            class="popup-form-login-input"
+            name="login"
+            type="text"
+            placeholder="Логин"
+            required=""
+          />
+          <input
+            class="popup-form-password-input"
+            name="password"
+            type="password"
+            placeholder="Пароль"
+            required=""
+          />
+          <button class="popup-form-button" type="submit">Войти</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="main-header">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
+      <img
+        class="main-img"
+        src="img/main-img.jpg"
+        alt="Фото компьютерного класса"
+        width="523"
+        height="316"
+      />
+
+      <div class="main-course">
+        <h2 class="main-course-header">Для кого этот курс</h2>
+        <div class="main-course-block">
+          <p class="main-course-block-paragraph">
+            Этот курс рассчитан на новичков, которые только начинают знакомство с веб-разработкой. В
+            начале курса вы узнаете о том, как устроен Интернет и веб-сайты. <br />
+            Для обучения необходимо только владеть компьютерной грамотностью (пользоваться
+            браузером, создавать папки и файлы, устанавливать программы).
+          </p>
+
+          <aside class="main-course-block-slogan">
+            <p class="main-course-block-slogan-text">
+              <span class="main-course-block-slogan-text-quotes_left">&#8220;</span>
+              Учимся <br />
+              вместе!
+              <span class="main-course-block-slogan-text-quotes_right">&#8221;</span>
+            </p>
+          </aside>
+        </div>
+      </div>
+
+      <div class="main-learn">
+        <h2 class="main-learn-header">Чему вы научитесь</h2>
+        <p class="main-learn-paragraph">
+          На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с нуля. Изучите основы
+          языков <strong>HTML</strong>, <strong>CSS</strong> и немного <strong>JavaScript</strong>.
+          Мы вместе сверстаем сайт нашей группы по этому макету. А затем вы <em>сами</em> сверстаете
+          свои личные странички в качестве домашнего задания и мы выложим все это на сервер.
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-сopyright">
+        2022 &#169;
+        <a class="footer-сopyright-link" href="https://innopolis.university/">учебный центр</a>
+      </p>
+    </footer>
+  </body>
+</html>
