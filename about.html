@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Study</title>
+    <title>About</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,9 @@
         <li>
           <a class="header-menu_link" href="students.html">Студенты</a>
         </li>
-        <li><a class="header-menu_link header-menu_active-link" href="#">О курсе</a></li>
+        <li>
+          <a class="header-menu_link header-menu_active-link" href="#">О курсе</a>
+        </li>
         <li><a class="header-menu_link" href="contacts.html">Контакты</a></li>
       </ul>
       <a class="login-button" href="#">Войти</a>
@@ -56,12 +58,19 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main main-width_about">
       <h1 class="main-header">О курсе &#128241;</h1>
-      <h3 class="main-header_about-video">Посмотрите видео о нас</h3>
-      <div class="main-about">
-        <video class="main-about-video" src=""></video>
-      </div>
+      <p class="main-about-text">Посмотрите видео о нас</p>
+      <iframe
+        class="main-about-video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jfbqsfmjPRw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </main>
 
     <footer class="footer">
