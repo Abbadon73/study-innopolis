@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <img class="header-logo" src="img/header-logo.svg" alt="" />
+      <img class="header-logo" src="img/header-logo.svg" alt="Логотип Университета Иннополис" />
       <ul class="header-menu">
         <li>
           <a class="header-menu_link" href="index.html">Главная</a>
@@ -37,7 +37,7 @@
       </ul>
       <a class="login-button" href="#">Войти</a>
       <div class="login-popup">
-        <h2 class="popup-header">Войти на сайт</h2>
+        <h2 class="popup-heading">Войти на сайт</h2>
         <form class="popup-form" action="" method="get">
           <input
             class="popup-form-login-input"
@@ -58,7 +58,35 @@
       </div>
     </header>
 
-    <main class="main main-width_contacts"></main>
+    <main class="main main-width_contacts">
+      <h1 class="main-header main-contacts-header">Как нас найти 🗺️️</h1>
+      <div class="main-map" style="position: relative; overflow: hidden">
+        <a
+          href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+          style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+          >Санкт‑Петербург</a
+        ><a
+          href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.320780%2C59.941247&utm_medium=mapframe&utm_source=maps&z=12"
+          style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+          >Санкт‑Петербург — Яндекс Карты</a
+        ><iframe
+          class="main-map-contacts"
+          src="https://yandex.ru/map-widget/v1/-/CCUjE2EK0A"
+          width="560"
+          height="400"
+          frameborder="1"
+          allowfullscreen="true"
+          style="position: relative"
+        ></iframe>
+      </div>
+      <div class="main-contacts">
+        <h2 class="main-contacts-heading">Наши контакты</h2>
+        <address class="main-our_contacts">
+          <p>Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000</p>
+          <a class="main-our_contacts-phone" href="tel:+78125555555">Тел: +7 (812) 555-55-55</a>
+        </address>
+      </div>
+    </main>
 
     <footer class="footer">
       <p class="footer-сopyright">
