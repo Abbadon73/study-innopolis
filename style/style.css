@@ -6,6 +6,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
+  color: #000000;
 }
 
 /* header */
@@ -25,6 +26,7 @@ body {
 
 .header-logo {
   max-height: 65px;
+  color: #fff;
 }
 
 .header-menu {
@@ -81,18 +83,74 @@ body {
 /* login-popup */
 .login-popup {
   display: none;
+  box-sizing: border-box;
   position: absolute;
   z-index: 2;
   left: 50%;
   transform: translate(-50%, 100%);
-  box-sizing: border-box;
   width: 100%;
   max-width: 500px;
   min-height: 418px;
   padding: 26px 28px 56px;
   background-color: #fff;
   border: 1px solid #213b7e;
-  box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+}
+
+.popup-heading {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0px 0 36px;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.popup-form-login-input {
+  width: 444px;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #808080;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #808080;
+  padding: 17px 0 10px 14px;
+  box-sizing: border-box;
+}
+
+.popup-form-password-input {
+  width: 444px;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #808080;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #808080;
+  padding: 17px 0 10px 14px;
+  box-sizing: border-box;
+}
+
+.popup-form-button {
+  width: 153px;
+  height: 50px;
+  align-self: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #ea6113;
+  border: none;
+}
+
+.popup-form-button:hover {
+  background-color: #be4905;
 }
 
 /* main */
@@ -109,7 +167,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 1.17;
-  margin: 33px 0 25px 0;
+  margin: 33px 0 25px;
 }
 
 .main-img {
@@ -119,12 +177,12 @@ body {
   object-fit: cover;
 }
 
-.main-course-header,
-.main-learn-header {
+.main-course-heading,
+.main-learn-heading {
   font-weight: 400;
   font-size: 25px;
   line-height: 1.16;
-  margin: 15px 0 10px 0;
+  margin: 15px 0 10px;
 }
 
 .main-course-block {
@@ -142,9 +200,6 @@ body {
   line-height: 1.17;
   text-align: justify;
   margin: 0;
-}
-
-.main-course-block-paragraph {
 }
 
 .main-course-block-slogan {
@@ -183,11 +238,21 @@ body {
 
 .main-students {
   display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
   /* display: flex;
     flex-wrap: wrap;
     gap: 2vw 3vw; */
+}
+
+.main-students-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-students-link:hover {
+  outline: 1px solid black;
+  opacity: 0.75;
 }
 
 .main-students-card {
@@ -196,13 +261,11 @@ body {
   align-items: center;
 }
 
-.main-students-card-img {
-
-}
-
 .main-students-card-name {
   margin: 8px 0;
   text-align: center;
+  font-size: 20px;
+  line-height: 1.15;
 }
 
 /* About */
@@ -210,8 +273,9 @@ body {
   max-width: 820px;
 }
 
-.main-about-text {
+.main-about-heading {
   font-size: 25px;
+  font-weight: 400;
   line-height: 1.16;
   margin-bottom: 15px;
 }
@@ -223,8 +287,47 @@ body {
 
 /* Contacts */
 .main-width_contacts {
-  max-width: 1268px;
+  max-width: 1300px;
 }
+
+.main-contacts-header {
+  margin: 0 auto;
+  max-width: 820px;
+  margin-top: 33px;
+  margin-bottom: 25px;
+}
+
+.main-map-contacts {
+  width: 100%;
+}
+
+.main-contacts-heading {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.16;
+  margin: 0 auto;
+  max-width: 820px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.main-our_contacts {
+  font-size: 18px;
+  line-height: 1.17;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.main-our_contacts > p {
+  margin-top: 0;
+}
+
+.main-our_contacts-phone {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* witcher */
 
 /* footer */
 .footer {
@@ -287,7 +390,10 @@ body {
   }
 }
 
-@media (max-width: 677px) {
+@media (max-width: 693px) {
+  .header-students {
+    text-align: center;
+  }
 }
 
 @media (max-width: 488px) {
@@ -295,11 +401,20 @@ body {
     text-align: center;
   }
 
+  .main-course-heading,
+  .main-learn-heading {
+    text-align: center;
+  }
+
   .main-students {
     flex-direction: column;
   }
 
-  .main-about-text {
+  .main-about-heading {
+    text-align: center;
+  }
+
+  .main-contacts-heading {
     text-align: center;
   }
 }
