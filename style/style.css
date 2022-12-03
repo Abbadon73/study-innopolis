@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "masonchronicles";
+  src: url(../fonts/masonchronicles.ttf);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -111,21 +116,9 @@ body {
   gap: 56px;
 }
 
-.popup-form-login-input {
-  width: 444px;
-  height: 55px;
-  background: #ffffff;
-  border: 1px solid #808080;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  color: #808080;
-  padding: 17px 0 10px 14px;
-  box-sizing: border-box;
-}
-
+.popup-form-login-input,
 .popup-form-password-input {
-  width: 444px;
+  min-width: 350px;
   height: 55px;
   background: #ffffff;
   border: 1px solid #808080;
@@ -328,6 +321,215 @@ body {
 }
 
 /* witcher */
+.witcher {
+  max-width: 1300px;
+  font-family: "masonchronicles";
+}
+
+#witcher-heading {
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 1.17;
+  margin-right: 25px;
+}
+
+.witcher-header {
+  background-image: url(../img/witcher-background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.witcher-img {
+  width: 30vw;
+  min-width: 300px;
+}
+
+.witcher-navigation {
+  list-style-type: none;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.witcher-navigation-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.witcher-navigation-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+#witcher-about-heading {
+  font-size: 2em;
+  margin: 20px 0 5px;
+}
+
+.witcher-about-quote,
+.witcher-about-summary-review-quote {
+  margin: 0;
+  background: white;
+  border-top: 5px solid #eaf9f9;
+  border-bottom: 5px solid #eaf9f9;
+  color: #3a3c55;
+  padding: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.witcher-about-quote p,
+.witcher-about-summary-review-quote p {
+  margin: 0 0 16px;
+  font-size: 1.5em;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+}
+
+.witcher-about-quote cite,
+.witcher-about-summary-review-quote cite {
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+.witcher-about-summary-who > h3 {
+  font-size: 1.7em;
+  margin: 20px 0 5px;
+}
+
+.witcher-about-summary-who > p {
+  font-size: 1.4em;
+  margin: 10px 0 0px;
+}
+
+.witcher-about-summary-character > h3 {
+  font-size: 1.7em;
+  margin: 20px 0 5px;
+}
+
+.table-character {
+  border: 1px solid black;
+  text-align: justify;
+  font-size: 1.2em;
+  font-weight: 600;
+  max-width: 950px;
+  min-width: 400px;
+}
+
+.table-character td {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+}
+
+.table-character td:nth-child(even) {
+  width: 100px;
+  text-align: center;
+}
+
+.witcher-about-summary-review > h3 {
+  font-size: 1.7em;
+  margin: 20px 0 5px;
+}
+
+#witcher-ability-heading {
+  font-size: 2em;
+  margin: 20px 0 5px;
+}
+
+.witcher-ability-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1em;
+}
+
+.witcher-ability-card-sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 1px solid black;
+}
+
+.sign-heding {
+  font-size: 1.5em;
+  margin: 0px 0px 5px;
+}
+
+.witcher-ability-card-sign p {
+  text-align: justify;
+  padding: 0px 10px;
+  margin: 0;
+}
+
+#witcher-board-heading {
+  font-size: 2em;
+  margin: 20px 0 5px;
+}
+
+.witcher-board-units {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.board-units-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #949494;
+  color: #fff;
+  outline: 1px solid black;
+}
+
+.board-units-card:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.7;
+  color: #fff;
+}
+
+.units-card-name {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+#witcher-contacts-heading {
+  font-size: 2em;
+  margin: 20px 0 5px;
+}
+
+.witcher-contacts > span {
+  font-size: 1.4em;
+}
+
+.witcher-contacts-post {
+  margin-bottom: 1em;
+}
+
+.witcher-contacts-post > h3 {
+  font-size: 1.7em;
+  margin: 20px 0 5px;
+}
+
+.witcher-contacts-post > span {
+  font-size: 1.4em;
+}
+
+.witcher-contacts-post-adress {
+  font-size: 1.3em;
+}
+
+.witcher-contacts-map-coordinates {
+  width: 100%;
+}
 
 /* footer */
 .footer {
@@ -390,9 +592,30 @@ body {
   }
 }
 
-@media (max-width: 693px) {
+@media (max-width: 692px) {
   .header-students {
     text-align: center;
+  }
+
+  #witcher-heading {
+    align-self: center;
+    margin: 15px 10px;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 544px) {
+  .witcher-ability-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .witcher-ability-card-sign {
+    max-width: 340px;
   }
 }
 
@@ -416,6 +639,26 @@ body {
 
   .main-contacts-heading {
     text-align: center;
+  }
+}
+
+@media (max-width: 458px) {
+  
+  .witcher-board-units {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .board-units-card {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 453px) {
+  #witcher-heading {
+    text-align: center;
+    margin: 15px 10px;
   }
 }
 

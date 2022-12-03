@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Это работа для ведьмака!</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="js/login-popup.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header-logo" src="img/header-logo.svg" alt="Логотип Университета Иннополис" />
+      <ul class="header-menu">
+        <li>
+          <a class="header-menu_link header-menu_active-link" href="index.html">Главная</a>
+        </li>
+        <li><a class="header-menu_link" href="students.html">Студенты</a></li>
+        <li><a class="header-menu_link" href="about.html">О курсе</a></li>
+        <li><a class="header-menu_link" href="contacts.html">Контакты</a></li>
+      </ul>
+      <a class="login-button" href="#">Войти</a>
+      <div class="login-popup">
+        <h2 class="popup-heading">Войти на сайт</h2>
+        <form class="popup-form" action="" method="get">
+          <input
+            class="popup-form-login-input"
+            name="login"
+            type="text"
+            placeholder="Логин"
+            required=""
+          />
+          <input
+            class="popup-form-password-input"
+            name="password"
+            type="password"
+            placeholder="Пароль"
+            required=""
+          />
+          <button class="popup-form-button" type="submit">Войти</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="main witcher">
+      <div class="witcher-header">
+        <h1 id="witcher-heading">Это работа для ведьмака!</h1>
+        <ul class="witcher-navigation">
+          <li><a class="witcher-navigation-link" href="#witcher-heading">Главная</a></li>
+          <li><a class="witcher-navigation-link" href="#witcher-about-heading">Обо мне</a></li>
+          <li><a class="witcher-navigation-link" href="#witcher-ability-heading">Умения</a></li>
+          <li>
+            <a class="witcher-navigation-link" href="#witcher-board-heading">Доска заказов</a>
+          </li>
+          <li><a class="witcher-navigation-link" href="#witcher-contacts-heading">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="witcher-about">
+        <h2 id="witcher-about-heading">Обо мне</h2>
+        <blockquote class="witcher-about-quote">
+          <p>«Иногда надо принимать решения и не оглядываться назад»</p>
+          <cite>Геральт из Ривии</cite>
+        </blockquote>
+        <div class="witcher-about-summary">
+          <div class="witcher-about-summary-who">
+            <h3>Кто я?</h3>
+            <p>
+              Высокий, худощавый, стройный неестественно бледный не молодой и не старый мужчина с
+              полностью седыми, как молоко, волосами.
+            </p>
+          </div>
+          <div class="witcher-about-summary-character">
+            <h3>Характер</h3>
+            <table class="table-character">
+              <tr class="table-character-row">
+                <td>сдержанность</td>
+                <td>&#10004;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>прямолинейность</td>
+                <td>&#10004;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>молчаливость</td>
+                <td>&#10004;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>честность</td>
+                <td>&#10004;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>красноречие</td>
+                <td>&#10004;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>любознательность</td>
+                <td>&#10008;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>рассудительность</td>
+                <td>&#10004;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>скрытность</td>
+                <td>&#10008;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>
+                  способность не терять самообладание в любой ситуации и приспосабливаться к любым
+                  условиям в силу «прирождённого оппортунизма»
+                </td>
+                <td>&#10004;</td>
+              </tr>
+              <tr class="table-character-row">
+                <td>не встревать ни в какие передряги и во всём придерживаться нейтралитета</td>
+                <td>&#10008;</td>
+              </tr>
+            </table>
+          </div>
+          <div class="witcher-about-summary-review">
+            <h3>Независмое мнение</h3>
+            <blockquote class="witcher-about-summary-review-quote">
+              <p>«...напичканный принципами, словно лисья шуба блохами...»</p>
+              <cite>Гилленстерн</cite>
+            </blockquote>
+            <blockquote class="witcher-about-summary-review-quote">
+              <p>«...человек, которого ты прислал, не веселее ручки от мотыги...»</p>
+              <cite>Витольд фон Эверек в письме брату</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="witcher-ability">
+        <h2 id="witcher-ability-heading">Умения</h2>
+        <div class="witcher-ability-card">
+          <section class="witcher-ability-card-sign">
+            <h3 class="sign-heding">Ирден</h3>
+            <img class="card-sign-yrden-img" src="img/img-witcher/sign/sign_yrden.png" alt="" />
+            <p>
+              Этот знак устанавливает особую магическую ловушку на земле, которая замедляет всех,
+              кто входит в зону её действия.
+            </p>
+          </section>
+          <section class="witcher-ability-card-sign">
+            <h3 class="sign-heding">Аард</h3>
+            <img class="card-sign-aard-img" src="img/img-witcher/sign/sign_aard.png" alt="" />
+            <p>
+              Этот знак создает пси-волну, которая на небольшой промежуток времени оглушает всех
+              противников, попавших под удар, и с некоторым шансом собъет их с ног.
+            </p>
+          </section>
+          <section class="witcher-ability-card-sign">
+            <h3 class="sign-heding">Аксий</h3>
+            <img class="card-sign-axii-img" src="img/img-witcher/sign/sign_axii.png" alt="" />
+            <p>
+              Этот знак позволяет на время подчинить разум цели, и либо просто обездвиживает цель на
+              время, либо заставляет её некоторое время сражаться на вашей стороне. Этот знак
+              используется также для приручения лошадей.
+            </p>
+          </section>
+          <section class="witcher-ability-card-sign">
+            <h3 class="sign-heding">Игни</h3>
+            <img class="card-sign-igni-img" src="img/img-witcher/sign/sign_igni.png" alt="" />
+            <p>
+              Этот знак создает сноп огненных искр, которые наносят урон и с некоторым шансом
+              поджигают цель. Также с помощью знака игни можно поджигать костры.
+            </p>
+          </section>
+          <section class="witcher-ability-card-sign">
+            <h3 class="sign-heding">Квен</h3>
+            <img class="card-sign-quen-img" src="img/img-witcher/sign/sign_quen.png" alt="" />
+            <p>
+              Этот знак создает вокруг ведьмака защитный барьер, который полностью поглощает
+              повреждения нескольких ударов.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <div class="witcher-board">
+        <h2 id="witcher-board-heading">Доска заказов</h2>
+        <div class="witcher-board-units">
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/1.ekimma.jpg" alt="Avatar" />
+            <p class="units-card-name">Экимма, 10 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/2.sirena.jpg" alt="Avatar" />
+            <p class="units-card-name">Сирена, 20 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/3.naker.jpg" alt="Avatar" />
+            <p class="units-card-name">Накер, 30 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/4.poludenicy.jpg" alt="Avatar" />
+            <p class="units-card-name">Полуденница, 40 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img
+              class="units-card-img"
+              src="img/img-witcher/unit/5.polunochnica.jpg"
+              alt="Avatar"
+            />
+            <p class="units-card-name">Полуночница, 50 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/6.prizraki.jpg" alt="Avatar" />
+            <p class="units-card-name">Призрак, 60 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/7.tumannik.jpg" alt="Avatar" />
+            <p class="units-card-name">Туманник, 70 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/8.ulfhedinn.jpg" alt="Avatar" />
+            <p class="units-card-name">Ульфхединн, 80 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/9.utopci.jpg" alt="Avatar" />
+            <p class="units-card-name">Утопец, 90 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/10.bes.jpg" alt="Avatar" />
+            <p class="units-card-name">Бес, 100 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img class="units-card-img" src="img/img-witcher/unit/11.ciklop.jpg" alt="Avatar" />
+            <p class="units-card-name">Циклоп, 110 &#128176;</p>
+          </section>
+          <section class="board-units-card">
+            <img
+              class="units-card-img"
+              src="img/img-witcher/unit/12.vodnaya-baba.jpg"
+              alt="Avatar"
+            />
+            <p class="units-card-name">Водяная баба, 120 &#128176;</p>
+          </section>
+        </div>
+      </div>
+
+      <div class="witcher-contacts">
+        <h2 id="witcher-contacts-heading">Контакты</h2>
+        <span>Не ищите меня, я найду вас сам</span>
+        <div class="witcher-contacts-post">
+          <h3>Адрес для почтовой связи:</h3>
+          <address class="witcher-contacts-post-adress">
+            <span>Москва, ул. Земляной Вал, 58</span> <br />
+            <a class="witcher-contacts-phone" href="tel:+79251005570">Тел: +7 (925) 100-55-70</a>
+          </address>
+        </div>
+        <div class="witcher-contacts-map" style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.ru/maps/org/taverna_dyadya_geralt/245212423246/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Таверна Дядя Геральт</a
+          ><a
+            href="https://yandex.ru/maps/213/moscow/category/cafe/184106390/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Кафе в Москве</a
+          ><a
+            href="https://yandex.ru/maps/213/moscow/category/restaurant/184106394/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 28px"
+            >Ресторан в Москве</a
+          ><iframe
+            class="witcher-contacts-map-coordinates"
+            src="https://yandex.ru/map-widget/v1/-/CCUjQXtxCC"
+            width="560"
+            height="400"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-сopyright">
+        2022 &#169;
+        <a class="footer-сopyright-link" href="https://innopolis.university/">учебный центр</a>
+      </p>
+    </footer>
+  </body>
+</html>
