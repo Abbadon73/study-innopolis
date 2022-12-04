@@ -76,30 +76,78 @@ body {
   min-height: 50px;
   text-decoration: none;
   font-size: 18px;
-  color: #ffffff;
+  color: #fff;
   background-color: #ea5d21;
+  position: relative;
 }
 
-.login-button:hover {
-  color: #ea5d21;
-  background-color: #ffffff;
+.btn {
+  transition: 1s;
+  overflow: hidden;
 }
+
+.btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #ea5d21;
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: .5;
+  filter: blur(30px);
+  transform: translateX(-100px)  skewX(-15deg);
+} 
+
+.btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #ea5d21;
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+
+.btn:hover {
+  background: #fff;
+  color: #ea5d21;
+  cursor: pointer;
+}
+
+.btn:hover::before {
+  transform: translateX(300px)  skewX(-15deg);  
+  opacity: 0.6;
+  transition: 1s;
+}
+
+.btn:hover::after {
+  transform: translateX(300px) skewX(-15deg);  
+  opacity: 1;
+  transition: 1s;
+} 
 
 /* login-popup */
 .login-popup {
   display: none;
-  box-sizing: border-box;
-  position: absolute;
-  z-index: 2;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, 100%);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
   width: 100%;
   max-width: 500px;
   min-height: 418px;
   padding: 26px 28px 56px;
   background-color: #fff;
   border: 1px solid #213b7e;
-  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 5px 5px 4px 0 rgba(0,0,0,0.25);
 }
 
 .popup-heading {
@@ -159,7 +207,7 @@ body {
 .main-header {
   font-weight: 700;
   font-size: 30px;
-  line-height: 1.17;
+  line-height: 35px;
   margin: 33px 0 25px;
 }
 
@@ -174,7 +222,7 @@ body {
 .main-learn-heading {
   font-weight: 400;
   font-size: 25px;
-  line-height: 1.16;
+  line-height: 29px;
   margin: 15px 0 10px;
 }
 
@@ -200,24 +248,41 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
-  line-height: 1.25;
+  line-height: 45px;
   color: #646464;
 }
 
 .main-course-block-slogan-text {
   margin: 0;
   display: flex;
+  /* position: relative; */
 }
+
+/* .main-course-block-slogan-text::before {
+  content: '\201C';
+  position: absolute;
+  left: -35px;
+  top: -14px;
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.main-course-block-slogan-text::after {
+  content: '\201D';
+  position: absolute;
+  left: 125px;
+  top: 35px;
+  font-size: 64px;
+  line-height: 80px;
+} */
 
 .main-course-block-slogan-text-quotes_left {
   margin-right: 5px;
-  line-height: 1.25;
 }
 
 .main-course-block-slogan-text-quotes_right {
   align-self: end;
   margin-left: 5px;
-  line-height: 1.25;
 }
 
 .main-learn-paragraph em {
@@ -227,6 +292,10 @@ body {
 /* Students */
 .main-width_students {
   max-width: 1202px;
+}
+
+.header-students::after {
+  content: ' \1F467 \1F9D2';
 }
 
 .main-students {
@@ -252,13 +321,28 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .main-students-card-name {
   margin: 8px 0;
   text-align: center;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 23px;
+}
+
+.main-students-card-newbie {
+  position: absolute;
+  top: 0;
+  transform: translate(70%, -50%);
+  display: flex;
+  padding: 2px 5px;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background-color: #3AA828;
+  color: #fff;
+  border-radius: 20px;
 }
 
 /* About */
@@ -269,13 +353,18 @@ body {
 .main-about-heading {
   font-size: 25px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 29px;
   margin-bottom: 15px;
+}
+
+.main-about-block-video {
+  aspect-ratio: 16 / 9;
+  min-width: 350px;
 }
 
 .main-about-video {
   width: 100%;
-  min-height: 550px;
+  height: 100%;
 }
 
 /* Contacts */
@@ -297,7 +386,7 @@ body {
 .main-contacts-heading {
   font-size: 25px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 29px;
   margin: 0 auto;
   max-width: 820px;
   margin-top: 15px;
@@ -306,7 +395,7 @@ body {
 
 .main-our_contacts {
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 21px;
   max-width: 820px;
   margin: 0 auto;
 }
@@ -384,6 +473,7 @@ body {
   padding: 30px;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .witcher-about-quote p,
